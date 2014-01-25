@@ -7,7 +7,7 @@
     "watson": "bin/watson"
   },
   "scripts": {
-    "test": "nodeunit test/*-test.coffee"
+    "test": "make test"
   },
   "repository": {
     "type": "git",

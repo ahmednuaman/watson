@@ -1,8 +1,8 @@
 # Use [Optimist](http://npmjs.org/package/optimist) to create a nice CLI.
 watson = require './watson'
 argv = require('optimist')
-        .usage("watson is a CasperJS HTML assessor; simply pass in some HTML files or directories and bingo.
-          \nUsage: watson [files]")
+        .usage("watson is a CasperJS HTML assessor; simply pass in a base file and some HTML files or directories and bingo.
+          \nUsage: watson base.html [files]")
         .demand(1)
         .argv
 

@@ -21,7 +21,7 @@ watch:
 	coffee -o lib/ -cw src/
 
 test:
-	nodeunit test/*-test.js
+	coffee -c test/*-test.coffee && mocha test/*-test.js
 
 dist: clean init docs build test
 
