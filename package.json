@@ -27,9 +27,10 @@
     "optimist": "~0.6.0"
   },
   "devDependencies": {
+    "assert": "~1.1.0",
     "coffee-script": "~1.6.3",
     "docco": "~0.6.2",
-    "nodeunit": "~0.8.2",
+    "mocha": "~1.17.1",
     "spooky": "~0.2.4"
   },
   "contributors": [
