@@ -1,8 +1,10 @@
-# Use [Optimist](http://npmjs.org/package/optimist) to create a nice CLI.
+_ = require 'lodash'
 watson = require './watson'
+
+# Use [Optimist](http://npmjs.org/package/optimist) to create a nice CLI.
 argv = require('optimist')
         .usage("watson is a CasperJS HTML assessor; simply pass in a base file and some HTML files or directories and bingo.
-          \nUsage: watson base.html folder/**/*.html")
+          \nUsage: watson [-v] base.html folder/**/*.html")
         .demand(1)
         .argv
 
@@ -16,4 +18,4 @@ base = files[0]
 filesToTest = _.rest files
 
 # Pass the `base` and `filesToTest` to [`watson.coffee`](watson.html) to be assessed.
-watson base, filesToTest
+watson base, filesToTest, argv.v
