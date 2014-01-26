@@ -6,5 +6,14 @@ argv = require('optimist')
         .demand(1)
         .argv
 
-# Pass the `argv` files glob to [`watson.coffee`](watson.html) to be processed.
-watson argv._
+# Cache the files.
+files = argv._
+
+# Set the base file for comparison.
+base = files[0]
+
+# Now set the files to test.
+filesToTest = _.rest files
+
+# Pass the `base` and `filesToTest` to [`watson.coffee`](watson.html) to be assessed.
+watson base, filesToTest
