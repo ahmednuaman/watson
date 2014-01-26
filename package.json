@@ -22,7 +22,6 @@
   "author": "Ahmed Nuaman <ahmed@ahmednuaman.com>",
   "license": "MIT",
   "dependencies": {
-    "glob": "~3.2.7",
     "lodash": "~2.4.1",
     "optimist": "~0.6.0"
   },

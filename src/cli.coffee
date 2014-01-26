@@ -2,7 +2,7 @@
 watson = require './watson'
 argv = require('optimist')
         .usage("watson is a CasperJS HTML assessor; simply pass in a base file and some HTML files or directories and bingo.
-          \nUsage: watson base.html [files]")
+          \nUsage: watson base.html folder/**/*.html")
         .demand(1)
         .argv
 
