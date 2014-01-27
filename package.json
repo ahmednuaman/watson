@@ -22,15 +22,15 @@
   "author": "Ahmed Nuaman <ahmed@ahmednuaman.com>",
   "license": "MIT",
   "dependencies": {
+    "jquery": "~2.1.0",
+    "jsdom": "~0.8.11",
     "lodash": "~2.4.1",
     "optimist": "~0.6.0"
   },
   "devDependencies": {
-    "assert": "~1.1.0",
     "coffee-script": "~1.6.3",
     "docco": "~0.6.2",
-    "mocha": "~1.17.1",
-    "spooky": "~0.2.4"
+    "mocha": "~1.17.1"
   },
   "contributors": [
     "Ahmed Nuaman <ahmed@ahmednuaman.com>"
